@@ -1,6 +1,6 @@
 import FamilyMemberCard from '@/components/FamilyMemberCard';
-import MusicPlayer from '@/components/MusicPlayer';
 import profileImage from '@/assets/profile-duc-phuc.png';
+import avatarPlaceholder from '@/assets/avatar-placeholder.png';
 
 const Index = () => {
   const teamMembers = [
@@ -13,6 +13,8 @@ const Index = () => {
         "Thích học bơi thêm vào cơ bản",
         "Thích ăn hàng cà Hàng"
       ],
+      imageSrc: avatarPlaceholder,
+      musicUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     },
     {
       name: "ĐỨC PHÚC",
@@ -24,6 +26,7 @@ const Index = () => {
         "Game yêu thích: Free Fire"
       ],
       imageSrc: profileImage,
+      musicUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
     },
     {
       name: "TẤN ĐẠT",
@@ -33,6 +36,8 @@ const Index = () => {
         "Sở thích: Bóng đá, vẽ tranh ngộ",
         "Thux"
       ],
+      imageSrc: avatarPlaceholder,
+      musicUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
     },
     {
       name: "BẢO NGÃ",
@@ -42,6 +47,8 @@ const Index = () => {
         "Happy birthday!",
         "Sở thích: Làm bánh yêu"
       ],
+      imageSrc: avatarPlaceholder,
+      musicUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
     },
     {
       name: "GIA PHÚ",
@@ -56,6 +63,8 @@ const Index = () => {
         "Nếu cần ăn uống thì liên lạc...",
         "Luôn sẵn sàng đến gần"
       ],
+      imageSrc: avatarPlaceholder,
+      musicUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
     },
   ];
 
@@ -115,6 +124,7 @@ const Index = () => {
                 imageSrc={member.imageSrc}
                 birthday={member.birthday}
                 subtitle={member.subtitle}
+                musicUrl={member.musicUrl}
               />
             ))}
           </div>
@@ -125,8 +135,6 @@ const Index = () => {
       <footer className="py-12 text-center text-muted-foreground border-t">
         <p className="text-sm">© 2024 Nhóm của chúng tôi. Tất cả quyền được bảo lưu.</p>
       </footer>
-
-      <MusicPlayer />
     </div>
   );
 };
